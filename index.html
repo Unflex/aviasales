@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>aviasales</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="HomePageAviasales">
+    <div class="logo">
+      <img class='form' src="./img/Form.png" alt="Form">
+      <img class='plane' src="./img/Plane.png" alt="Plane">
+    </div>  
+    <div class="filter">
+        <div class='filter-txt'>Количество пересадок</div>
+        <div class="filterButton all">
+          <div class="checkbox"></div>
+          <div class="filterButtonTxt">Все</div>
+        </div>
+        <div class="filterButton no_transfer">
+          <div class="checkbox"></div>
+          <div class="filterButtonTxt">Без пересадок</div>
+        </div>
+        <div class="filterButton one_transfer">
+          <div class="checkbox"></div>
+          <div class="filterButtonTxt">1 пересадка</div>
+        </div>
+        <div class="filterButton two_transfer">
+          <div class="checkbox"></div>
+          <div class="filterButtonTxt">2 пересадки</div>
+        </div>
+        <div class="filterButton free_transfer">
+          <div class="checkbox"></div>
+          <div class="filterButtonTxt">3 пересадки</div>
+        </div>
+    </div>
+    <div class="sortirovka">
+      <nav class="tabs-nav">
+        <ul class="tabs-nav__wrapper">
+          <li class="tabs-nav__item">
+            <div class="tabsTopFilter minPrice" >Самый дешевый</div>
+          </li>
+          <li class="tabs-nav__item">
+            <div class="tabsTopFilter dop-line so_quickly">Самый быстрый</div>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+    <div class="listTickets">
+      <template id="templateTicket">
+        <div class="ticket">
+            <header class="price_and_logo">
+              <div class="price"></div>
+              <div class="tickets-logo">
+                <img class="tickets-img" src="./img/S7 Logo.png" alt="airline">
+              </div>
+            </header>
+            <div class="there">
+              <div class="route">
+                <div class="txt-route">MOW – HKT</div>
+                <div class="time">10:45 – 08:00</div>  
+              </div>
+              <div class="length">
+                <div class="txt-in-way">В пути</div>
+                <div class="time-in-way">21ч 15м</div>
+              </div>
+              <div class="stops">
+                <div class="txt-transfers">2 пересадки</div>
+                <div class="transfers"></div>
+              </div>
+            </div>
+            <div class="back">
+              <div class="route">
+                <div class="txt-route">MOW – HKT</div>
+                <div class="time">11:20 – 00:50</div>
+              </div>
+              <div class="length">
+                <div class="txt-in-way">В пути</div>
+                <div class="time-in-way">13ч 30м</div>
+              </div>
+              <div class="stops">
+                <div class="txt-transfers">1 пересадка</div>
+                <div class="transfers">HKG</div>
+              </div>
+            </div>
+        </div>
+      </template>
+    </div>
+
+    <div class="buttonBottom"><span class="button-txt">Показать еще 5 билетов!</span> </div>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>

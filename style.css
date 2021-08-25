@@ -1,0 +1,334 @@
+/*главный контейнер*/
+body {
+  margin: 0;
+}
+.HomePageAviasales {
+  background: #f3f7fa;
+  position: relative;
+  left: 25%;
+  height: 1350px;
+  width: 960px;
+}
+
+/*логотип*/
+
+.form {
+  position: absolute;
+  min-width: 60px;
+  min-height: 60px;
+  top: 50px;
+  left: 450px;
+}
+.plane {
+  position: absolute;
+  top: 62px;
+  left: 467px;
+  cursor: url("./img/Cursor.png"), pointer;
+}
+
+/*при ошибке высвечивается загрузчик и текст*/
+
+.circle {
+  position: absolute;
+  top: 20%;
+  left: 60%;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 10px solid rgba(255, 255, 255, 1);
+  border-top: 10px solid #2196f3;
+  animation: animate 2s infinite linear;
+}
+.text_decoration {
+  position: absolute;
+  width: 350px;
+  height: 50px;
+  left: 440px;
+  top: 45%;
+  background: #2196f3;
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 50px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  cursor: url("./img/Cursor.png"), pointer;
+}
+.text_decoration:hover {
+  left: 436px;
+  top: calc(45% - 2px);
+  width: 358px;
+  height: 54px;
+  text-align: center;
+}
+@keyframes animate {
+  0% {
+    transform: translate(-20%, 50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-20%, 50%) rotate(360deg);
+  }
+}
+/*сортировка билетов по количеству пересадок*/
+
+.filter {
+  position: absolute;
+  width: 232px;
+  height: 252px;
+  top: 160px;
+  left: 103px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background: #ffffff;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+}
+
+.filter-txt {
+  margin: 0;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  padding: 20px 20px 10px 20px;
+  color: #4a4a4a;
+}
+
+.filterButton {
+  display: flex;
+  padding: 10px 10px 10px 20px;
+  cursor: url("./img/Cursor.png"), pointer;
+}
+.img-checkbox {
+  background: center no-repeat url("./img/Shape.png");
+}
+.checkboxBorder {
+  border: 1px solid #9abbce;
+}
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #9abbce;
+  box-sizing: border-box;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.filterButtonTxt {
+  margin-left: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #4a4a4a;
+}
+.filterButton:hover {
+  background: #f1fcff;
+}
+.filterButton:hover .checkbox {
+  border-color: #2196f3;
+}
+input {
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.input-txt {
+  margin-left: 10px;
+}
+/*сортировка билетов по цене*/
+.sortirovka {
+  position: absolute;
+  width: 502px;
+  height: 50px;
+  left: 355px;
+  top: 160px;
+}
+
+.tabs-nav__wrapper {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  border: 1px solid #dfe5ec;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.tabsTopFilter {
+  width: 251px;
+  height: 50px;
+
+  background: #ffffff;
+  box-sizing: border-box;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 50px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #4a4a4a;
+  cursor: url("./img/Cursor.png"), pointer;
+  text-align: center;
+}
+.dop-line {
+  border-left: 1px solid #dfe5ec;
+  border-right: 1px solid #dfe5ec;
+}
+
+.tabsTopFilter:hover {
+  background: #2196f3;
+  color: #ffffff;
+}
+.click_btn {
+  background: #2196f3;
+  color: #ffffff;
+}
+/*сами билеты*/
+.listTickets {
+  position: absolute;
+  left: 355px;
+  right: 103px;
+  top: 230px;
+}
+
+.ticket {
+  width: 502px;
+  height: 184px;
+  background: #ffffff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.price_and_logo {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.price {
+  padding-top: 5px;
+  margin: 0;
+  font-family: "Open Sans";
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  align-items: center;
+  color: #2196f3;
+}
+
+.there {
+  padding: 0 20px 10px 20px;
+  display: flex;
+}
+.back {
+  padding: 0 20px 10px 20px;
+  display: flex;
+}
+.route {
+  min-width: 141px;
+  height: 39px;
+  margin-right: 20px;
+}
+
+.txt-route {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #a0b0b9;
+}
+.time {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #4a4a4a;
+}
+
+.length {
+  min-width: 141px;
+  height: 39px;
+  margin-right: 20px;
+}
+
+.txt-in-way {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+  color: #a0b0b9;
+}
+
+.time-in-way {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #4a4a4a;
+}
+
+.stops {
+  min-width: 140px;
+  height: 39px;
+  margin-right: 20px;
+}
+
+.txt-transfers {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #a0b0b9;
+}
+.transfers {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #4a4a4a;
+}
+
+/*нижняя кнопка*/
+.buttonBottom {
+  position: absolute;
+  width: 502px;
+  height: 50px;
+  left: 355px;
+  top: 1250px;
+
+  background: #2196f3;
+  border-radius: 5px;
+  text-align: center;
+  cursor: url("./img/Cursor.png"), pointer;
+}
+.button-txt {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 50px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
